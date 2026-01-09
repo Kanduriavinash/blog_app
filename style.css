@@ -1,0 +1,132 @@
+/* ===== GLOBAL DARK THEME ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0;
+    color: #eaeaea;
+}
+
+/* HEADING */
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* ===== BLOG FORM (CARD) ===== */
+.blog-form {
+    max-width: 520px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    background: rgba(30, 30, 45, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+/* ===== INPUT & TEXTAREA (DARK TEXT FIELD) ===== */
+.blog-form input,
+.blog-form textarea {
+    width: 95%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #3a3a5c;
+    background-color: #121225;
+    color: #ffffff;
+    outline: none;
+}
+
+/* Placeholder text */
+.blog-form input::placeholder,
+.blog-form textarea::placeholder {
+    color: #9a9abf;
+}
+
+/* Focus effect */
+.blog-form input:focus,
+.blog-form textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.3);
+}
+
+/* ===== ADD POST BUTTON ===== */
+.blog-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #a855f7, #3b82f6);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.4);
+}
+
+/* ===== POSTS CONTAINER ===== */
+#posts {
+    max-width: 520px;
+    margin: auto;
+}
+
+/* ===== POST CARD ===== */
+.post {
+    background: rgba(20, 20, 35, 0.95);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.4s ease;
+}
+
+/* POST TITLE */
+.post h3 {
+    margin: 0 0 10px;
+    color: #c084fc;
+}
+
+/* POST CONTENT */
+.post p {
+    color: #d1d1e9;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ===== DELETE BUTTON ===== */
+.post button {
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(236, 72, 153, 0.4);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
