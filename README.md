@@ -2,6 +2,7 @@
 
 A simple blog application built using **HTML, CSS, and JavaScript**.  
 This app allows users to create, view, and delete blog posts, with data stored locally using **browser localStorage**.
+Live Link:https://kanduriavinash.github.io/blog_app/
 
 ---
 
